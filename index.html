@@ -6,21 +6,28 @@
     <title>autotwin</title>
     <style>
         body {
-            font-family: Helvetica, sans-serif;
+            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
             margin: 0;
             padding: 20px;
             line-height: 1.6;
             max-width: 800px;
             margin: 0 auto;
         }
-        
+
         .logo {
             max-width: 200px;
             height: auto;
             margin-bottom: 20px;
             animation: flyInFromLeft 2s;
         }
-        
+
+        .logo-right {
+            max-width: 200px;
+            height: auto;
+            margin-bottom: 20px;
+            animation: flyInFromRight 2s;
+        }
+
         @keyframes flyInFromLeft {
             from {
                 transform: translateX(-100vw);
@@ -31,7 +38,18 @@
                 opacity: 1;
             }
         }
-        
+
+        @keyframes flyInFromRight {
+            from {
+                transform: translateX(100vw);
+                opacity: 0;
+            }
+            to {
+                transform: translateX(50vw);
+                opacity: 1;
+            }
+        }
+
         h1 {
             color: #333;
             margin-bottom: 20px;
@@ -41,96 +59,24 @@
             color: #666;
             margin-bottom: 20px;
         }
-        
-        ul {
-            color: #666;
-        }
-        
-        li {
-            margin-bottom: 8px;
-        }
-        
-        .flow-container {
-            display: flex;
-            align-items: center;
-            gap: 15px;
-            flex-wrap: wrap;
-            justify-content: center;
-            margin: 40px 0;
-        }
-        
-        .flow-box {
-            padding: 20px 30px;
-            border-radius: 20px;
-            color: white;
-            font-size: 18px;
-            font-weight: bold;
-            text-align: center;
-            min-width: 120px;
-        }
-        
-        .patient {
-            background-color: #8B5A9F;
-        }
-        
-        .analysis {
-            background-color: #5A8FBF;
-        }
-        
-        .injury-risk {
-            background-color: #B85450;
-        }
-        
-        .policy {
-            background-color: #8B5A9F;
-        }
-        
-        .arrow {
-            width: 0;
-            height: 0;
-            border-left: 12px solid #ccc;
-            border-top: 12px solid transparent;
-            border-bottom: 12px solid transparent;
-            margin: 0 5px;
-        }
-        
-        @media (max-width: 768px) {
-            .flow-container {
-                flex-direction: column;
-            }
-            
-            .arrow {
-                transform: rotate(90deg);
-                margin: 10px 0;
-            }
-            
-            .flow-box {
-                font-size: 16px;
-                padding: 15px 25px;
-                min-width: 100px;
-            }
-        }
     </style>
 </head>
 <body>
     <img src="img/autotwin_logo_300dpi_880x384px.png" alt="autotwin logo" class="logo">
+    <img src="img/qr_code_autotwin_github_io.jpg" alt="second logo" class="logo-right">
 
-    <h1>autotwin</h1>
-    <p><strong>Vision:</strong> Automate the creation of a human digital twin based on subject-specific medical imaging.</p>
-    
-    <div class="flow-container">
-        <div class="flow-box patient">patient</div>
-        <div class="arrow"></div>
-        <div class="flow-box analysis">analysis</div>
-        <div class="arrow"></div>
-        <div class="flow-box injury-risk">injury risk</div>
-        <div class="arrow"></div>
-        <div class="flow-box policy">policy</div>
-    </div>
-    
-    <ul>
-        <li>First placeholder item describing a key feature or benefit</li>
-        <li>Second placeholder item highlighting another important aspect</li>
-    </ul>
+    <h1>Vision</h1>
+
+    <p>The <strong>autotwin</strong> workflow seeks to create a human digital twin.</p>
+
+    <p>The workflow is composed of several steps:</p>
+    <ol>
+        <li>Imaging</li>
+        <li>Segmentation</li>
+        <li>Meshing</li>
+        <li>Analysis</li>
+        <li>Injury Risk</li>
+    </ol>
+
 </body>
 </html>

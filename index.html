@@ -21,13 +21,6 @@
             animation: flyInFromLeft 2s;
         }
 
-        .logo-right {
-            max-width: 200px;
-            height: auto;
-            margin-bottom: 20px;
-            animation: flyInFromRight 2s;
-        }
-
         @keyframes flyInFromLeft {
             from {
                 transform: translateX(-100vw);
@@ -39,15 +32,16 @@
             }
         }
 
-        @keyframes flyInFromRight {
-            from {
-                transform: translateX(100vw);
-                opacity: 0;
-            }
-            to {
-                transform: translateX(50vw);
-                opacity: 1;
-            }
+        footer {
+            background-color: #888;
+            padding: 0px;
+            text-align: center;
+            margin-top: 40px;
+        }
+        
+        .footer-logo {
+            max-width: 100px;
+            height: auto;
         }
 
         h1 {
@@ -63,7 +57,6 @@
 </head>
 <body>
     <img src="img/autotwin_logo_300dpi_880x384px.png" alt="autotwin logo" class="logo">
-    <img src="img/qr_code_autotwin_github_io.jpg" alt="second logo" class="logo-right">
 
     <h1>Vision</h1>
 
@@ -77,6 +70,10 @@
         <li>Analysis</li>
         <li>Injury Risk</li>
     </ol>
+
+    <footer>
+        <img src="img/qr_code_autotwin_github_io.jpg" alt="qr code" class="footer-logo">
+    </footer>
 
 </body>
 </html>

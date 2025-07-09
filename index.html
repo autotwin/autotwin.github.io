@@ -7,6 +7,12 @@
     <link rel="icon" type="image/png" href="img/quotation_marks_icon_96x96px.png" />
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <style>
+         * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
         body {
             font-family: 'Roboto', 'Helvetica Neue', Helvetica, Arial, sans-serif;
             margin: 0;
@@ -15,6 +21,7 @@
             max-width: 800px;
             margin: 0 auto;
             color: #555;
+            background-color: #98b8c7;
         }
 
         .logo {
@@ -50,10 +57,80 @@
             color: #333;
             margin-bottom: 20px;
         }
-        
+
         p {
             color: #666;
             margin-bottom: 20px;
+        }
+
+        .container {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .box {
+            flex: 1;
+            min-width: 250px;
+            padding: 20px;
+            border: 4px solid magenta;
+            border-radius: 8px;
+        }
+
+        .box-red {
+            background-color: red;
+            color: white;
+        }
+
+        .box-green {
+            background-color: green;
+            color: white;
+        }
+
+        .box-blue {
+            background-color: blue;
+            color: white;
+        }
+
+        .box h2 {
+            text-align: center;
+            margin-bottom: 15px;
+            font-size: 1.5em;
+        }
+
+        .box p {
+            text-align: left;
+            line-height: 1.6;
+        }
+
+        /* Tablet responsive */
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+            }
+            
+            .box {
+                min-width: 100%;
+            }
+        }
+
+        /* Mobile responsive */
+        @media (max-width: 480px) {
+            body {
+                padding: 10px;
+            }
+            
+            .container {
+                gap: 15px;
+            }
+            
+            .box {
+                padding: 15px;
+            }
+            
+            .box h2 {
+                font-size: 1.3em;
+            }
         }
     </style>
 </head>
@@ -72,6 +149,23 @@
         <li>Analysis</li>
         <li>Injury Risk</li>
     </ol>
+
+    <div class="container">
+        <div class="box box-red">
+            <h2>Hello World</h2>
+            <p>Place holder text</p>
+        </div>
+        
+        <div class="box box-green">
+            <h2>Hello World</h2>
+            <p>Place holder text</p>
+        </div>
+        
+        <div class="box box-blue">
+            <h2>Hello World</h2>
+            <p>Place holder text</p>
+        </div>
+    </div>
 
     <footer>
         <img src="img/qr_code_autotwin_github_io.jpg" alt="qr code" class="footer-logo">

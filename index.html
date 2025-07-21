@@ -78,17 +78,17 @@
         }
 
         .box-one {
-            background-color: red;
+            background-color: #EBEDEF;
             color: white;
         }
 
         .box-two {
-            background-color: green;
+            background-color: #DDE1E4;
             color: white;
         }
 
         .box-three {
-            background-color: blue;
+            background-color: #3B3F44;
             color: white;
         }
 
@@ -137,30 +137,29 @@
 <body>
     <img src="img/autotwin_logo_300dpi_880x384px.png" alt="autotwin logo" class="logo">
 
-    <h1>Vision</h1>
-
     <p><strong>autotwin</strong> is an automated workflow used for segmentation, meshing, and analysis of a digital twin.</p>
     <p>The workflow is useful for analysis of as-built and <em>in situ</em> domains, where the geometric description of the subject comes from image stacks.</p>
 
     <div class="container">
         <div class="box box-one">
-            <h2>Red</h2>
-            <p>Place holder text</p>
+            <h2>Segmentation</h2>
+            <p><a href="https://github.com/autotwin/ensemble"><strong>ensemble</strong></a> is an automated Python workflow that creates a segmentation from images stacks.</p>
         </div>
         
         <div class="box box-two">
-            <h2>Blue</h2>
-            <p>Place holder text</p>
+            <h2>Meshing</h2>
+            <p><a href="https://github.com/autotwin/automesh"><strong>automesh</strong></a> is an automated Rust workflow that creates an all-hexahedral finite element mesh from a segmentation.</p>
         </div>
         
         <div class="box box-three">
-            <h2>Green</h2>
-            <p>Place holder text</p>
+            <h2>Analysis</h2>
+            <p><a href="https://github.com/autotwin/automesh"><strong>autosim</strong></a> is an automated Python workflow that creates analysis data sets from a finite element solver, such as <a href="https://www.3ds.com/products/simulia/abaqus">ABAQUS</a> or <a href="https://www.sandia.gov/asc/advanced-simulation-and-computing/integrated-codes/">Sierra Solid Mechanics</a></p>
         </div>
     </div>
 
     <footer>
         <img src="img/qr_code_autotwin_github_io.jpg" alt="qr code" class="footer-logo">
+        <!-- https://onesignal.com/blog/11-shades-of-gray-a-color-system-story/-->
     </footer>
 
 </body>

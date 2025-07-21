@@ -5,7 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>autotwin</title>
     <link rel="icon" type="image/png" href="img/quotation_marks_icon_96x96px.png" />
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <!--link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
     <style>
          * {
             margin: 0;
@@ -14,7 +18,8 @@
         }
 
         body {
-            font-family: 'Roboto', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+            /* font-family: 'Roboto', 'Helvetica Neue', Helvetica, Arial, sans-serif; */
+            font-family: 'Montserrat', sans-serif;
             margin: 0;
             padding: 20px;
             line-height: 1.6;
@@ -22,6 +27,13 @@
             margin: 0 auto;
             color: #3B3F44;
             background-color: white;
+        }
+
+        .montserrat-medium {
+          font-family: "Montserrat", sans-serif;
+          font-optical-sizing: auto;
+          font-weight: 500;
+          font-style: normal;
         }
 
         .logo {
@@ -138,7 +150,7 @@
     <img src="img/autotwin_logo_300dpi_880x384px.png" alt="autotwin logo" class="logo">
 
     <p><strong>autotwin</strong> is an automated workflow used for segmentation, meshing, and analysis of a digital twin.</p>
-    <p>The workflow is useful for analysis of as-built and <em>in situ</em> domains, where the geometric description of the subject comes from image stacks.</p>
+    <p>The workflow is useful for scientific analysis of as-built and <em>in situ</em> domains, where the geometric description of the subject comes from image stacks.</p>
 
     <div class="container">
         <div class="box box-one">
@@ -153,7 +165,7 @@
         
         <div class="box box-three">
             <h2>Analysis</h2>
-            <p><a href="https://github.com/autotwin/automesh"><strong>autosim</strong></a> is an automated Python workflow that creates analysis data sets from a finite element solver, such as <a href="https://www.3ds.com/products/simulia/abaqus">ABAQUS</a> or <a href="https://www.sandia.gov/asc/advanced-simulation-and-computing/integrated-codes/">Sierra Solid Mechanics</a></p>
+            <p><a href="https://github.com/autotwin/automesh"><strong>autosim</strong></a> is an automated Python workflow that creates analysis data sets from a finite element solver, such as <a href="https://www.3ds.com/products/simulia/abaqus">ABAQUS</a> or <a href="https://www.sandia.gov/asc/advanced-simulation-and-computing/integrated-codes/">Sierra Solid Mechanics</a>.</p>
         </div>
     </div>
 

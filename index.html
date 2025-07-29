@@ -32,12 +32,12 @@
             max-width: 200px;
             height: auto;
             margin-bottom: 80px;
-            animation: flyInFromLeft 2s;
+            /* animation: flyInFromLeft 1s; */
         }
 
         @keyframes flyInFromLeft {
             from {
-                transform: translateX(-100vw);
+                transform: translateX(-50vw);
                 opacity: 0;
             }
             to {
@@ -46,10 +46,21 @@
             }
         }
 
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+            
+        }
+
         footer {
             padding: 0px;
             text-align: center;
             margin-top: 40px;
+            font-size: 0.85em;  /* 80% of normal text size */
         }
         
         .footer-logo {
@@ -67,6 +78,19 @@
             margin-bottom: 20px;
         }
 
+        a:link,
+        a:visited {
+            color: darkblue; /* Bootstrap primary color */
+            text-decoration: none;
+            background-color: transparent;
+        }
+
+        a:hover {
+            color: darkblue; /* Darker shade for hover */
+            text-decoration: underline;
+            background-color: yellow;
+        }
+
         .container {
             display: flex;
             gap: 20px;
@@ -76,18 +100,24 @@
         .box {
             flex: 1 1 0;
             padding: 20px;
+            opacity: 0;
+            animation: fadeIn 1s ease-out forwards;
+            border-radius: 24px; /* rounded corners */
         }
 
         .box-one {
             background-color: #EBEDEF;
+            animation-delay: 0s;
         }
 
         .box-two {
             background-color: #DDE1E4;
+            animation-delay: 0.25s;
         }
 
         .box-three {
             background-color: #CED3D8;
+            animation-delay: 0.5s;
         }
 
         .box h2 {
@@ -156,6 +186,7 @@
     </div>
 
     <footer>
+        <p>The <strong>autotwin</strong> workflow is created by researchers at the <a href="https://sites.bu.edu/lejeunelab/">Boston University Lejeune Lab</href></a>, the <a href="https://engineermu.wixsite.com/injurybiomechanics">Robert Morris University Carlsen Lab</href></a>, and the <a href="https://www.sandia.gov/biomechanics/"</a>Sandia National Laboratories Injury Biomechanics Laboratory</p>
         <img src="img/qr_code_autotwin_github_io.jpg" alt="qr code" class="footer-logo">
         <!-- https://onesignal.com/blog/11-shades-of-gray-a-color-system-story/-->
     </footer>
